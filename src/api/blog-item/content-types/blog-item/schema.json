@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_items",
+  "info": {
+    "singularName": "blog-item",
+    "pluralName": "blog-items",
+    "displayName": "blogItem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoMeta": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "tumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pageDescription": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "Album": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heroTextual": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-components.hero-textual"
+    }
+  }
+}

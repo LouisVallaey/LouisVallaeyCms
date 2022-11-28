@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Slug": {
+      "type": "uid"
+    },
+    "seoTitle": {
+      "type": "string",
+      "maxLength": 50,
+      "required": true
+    },
+    "seoMeta": {
+      "type": "text",
+      "maxLength": 160
+    },
+    "heroType": {
+      "type": "dynamiczone",
+      "components": [
+        "page-components.hero",
+        "page-components.hero-cta",
+        "page-components.hero-textual"
+      ]
+    },
+    "heroSecond": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-components.hero-second"
+    },
+    "workContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-components.work-content"
+    },
+    "name": {
+      "type": "string",
+      "regex": "^\\w[a-zA-Z@#0-9.]*$",
+      "unique": false
+    },
+    "invertedColor": {
+      "type": "boolean"
+    }
+  }
+}

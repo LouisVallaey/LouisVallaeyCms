@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_components_heroes",
+  "info": {
+    "displayName": "Hero",
+    "icon": "chess-board",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cta": {
+      "type": "string"
+    }
+  }
+}

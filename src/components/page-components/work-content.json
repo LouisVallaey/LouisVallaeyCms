@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_page_components_work_contents",
+  "info": {
+    "displayName": "WorkContent",
+    "icon": "clone",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "blog_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-item.blog-item"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_page_components_hero_textuals",
+  "info": {
+    "displayName": "HeroTextual",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cta": {
+      "type": "string"
+    }
+  }
+}

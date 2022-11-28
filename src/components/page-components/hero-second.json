@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_components_hero_seconds",
+  "info": {
+    "displayName": "HeroSecond",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "displayLogo": {
+      "type": "boolean"
+    }
+  }
+}
